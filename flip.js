@@ -7,7 +7,10 @@ samples('github:tidalcycles/dirt-samples')
 samples('github:kyrsive/diarrhea-drumkit')
 samples('github:kyrsive/stardust-drumkit')
 samples('github:kyrsive/blancnote-samples')
-// ^ all of my samples are in my github folder, and a bunch of drum samples are from this tidalcycles library on github (the ones in this flip r also on github except for the tag)
+/* all of my samples are in my github folder, and a bunch of drum samples are from this tidalcycles library on github 
+(the ones in this flip r also on github except for the tag and stems
+, those r on dj dave's github)
+*/
 
 Pattern.prototype.bsend = function (id) { return this.bus(id).dry(0); };
 // ^ important function for mastering
