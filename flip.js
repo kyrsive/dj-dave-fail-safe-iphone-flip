@@ -399,14 +399,14 @@ let SINE2 = chrd("<0 5>/2:21").scale("C#:MINOR").trans(12)
       .bite("8","3 1 7 4".seg(8).fast("<2!3 <4 1!7>>*2")).add("0 2"))
   .s("square").dec(0.4)
   .glide(0.04).hpf(100)
-  .bsend(1).bgain(1.1)
+  .bsend(1).bgain(0.9)
 
 let SINE3 = chrd("<0 5>/2:21").scale("C#:MINOR").trans(12)
 .arpu("0 3 9 1 2 [- 3] 0 <5 7 5 9>".add("<0 0 [2 1 0] [2 1 0]>/4")
       .bite("8","3 1 7 4".seg(8).fast("<2!3 <1>>*2")).add("0 2"))
   .s("square").dec(0.4)
   .glide(0.04).hpf(100)
-  .bsend(1).bgain(1.2)
+  .bsend(1).bgain(0.9)
 
 
 let PLC = chrd("<0 2>/4:32").ply(8).struct("[x x x*2 x]").sc().trans(24)
@@ -548,6 +548,6 @@ $: arrange(
   [4, silence]
   
 )
-//.rib(111,4)
+//.rib(40,50)
 
 $: s("bus:1").soft(0)
